@@ -1,0 +1,10 @@
+#!/bin/sh
+'''exec' "/Users/ashtehrani/agents/# Open Terminal and run these commands mkdir pet_simulator cd pet_simulator  # Create a virtual environment python -m venv venv  # Activate the virtual environment source venv:bin:activate/APP/petmagix-health-hub/backend/venv/bin/python" "$0" "$@"
+' '''
+# -*- coding: utf-8 -*-
+import re
+import sys
+from pip._internal.cli.main import main
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(main())
